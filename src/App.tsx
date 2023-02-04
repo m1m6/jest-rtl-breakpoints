@@ -10,11 +10,11 @@ export default function MyApp() {
       sx={{
         backgroundColor: "grey",
         [theme.breakpoints.up("sm")]: {
-          backgroundColor: "red"
+          backgroundColor: "red",
         },
         [theme.breakpoints.up("md")]: {
-          backgroundColor: "green"
-        }
+          backgroundColor: "green",
+        },
       }}
     >
       Hello World

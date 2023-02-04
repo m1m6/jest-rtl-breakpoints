@@ -18,7 +18,8 @@
     "typescript": "latest"
   },
   "devDependencies": {
-    "react-scripts": "latest"
+    "react-scripts": "latest",
+    "@types/css-mediaquery": "0.1.2"
   },
   "description": "https://mui.com/material-ui/getting-started/usage/",
   "version": "0.0.99",
@@ -27,5 +28,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

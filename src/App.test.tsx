@@ -37,7 +37,16 @@ describe("MyComponent", () => {
 
   it("renders correctly on tablets screens", () => {
     // Set the screen size to a smaller value
-    resizeScreenSize(600);
+    // resizeScreenSize(600);
+       // Set the screen size to a smaller value
+       window.matchMedia = jest.fn().mockImplementation((query) => {
+        return {
+          matches: query.includes('(max-width: 601px)'),
+          addListener: jest.fn(),
+          removeListener: jest.fn(),
+        };
+      });
+
     // Render the component
     const { getByText } = render(<MyApp />);
 

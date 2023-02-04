@@ -1,9 +1,9 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import MyApp from "./App";
+import App from "./App";
 
-ReactDOM.createRoot(document.querySelector("#app")).render(
+ReactDOM.createRoot(document.querySelector("#testsda")).render(
   <React.StrictMode>
-    <MyApp />
+    <App />
   </React.StrictMode>
 );
